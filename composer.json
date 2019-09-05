@@ -1,0 +1,21 @@
+{
+    "name": "xiebruce/php-get-image-from-clipboard",
+    "description": "Get image the copied to clipboard(usually from screenshot) and dump it into jpg/png image file. Support macOS/Windows/Linux(Only test on Ubuntu 18.04.2 LTS).",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruce Xie",
+            "email": "xiediebruce@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "xiebruce\\": "src"
+        }
+    }
+}
