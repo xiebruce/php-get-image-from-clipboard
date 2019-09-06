@@ -9,8 +9,8 @@
 namespace GetImgFromClipboard;
 
 class GetImgFromClipboard {
-	public $cmd;
-	
+	private $cmd;
+
 	public function __construct(){
 		switch (PHP_OS){
 			case 'Darwin':
@@ -114,7 +114,7 @@ class GetImgFromClipboard {
 	 *
 	 * @return mixed
 	 */
-	public function getFileExt($filePath){
+	private function getFileExt($filePath){
 		$pathinfo = pathinfo($filePath);
 		$ext = isset($pathinfo['extension']) ? strtolower($pathinfo['extension']) : '';
 		$ext && $ext = str_replace('jpeg', 'jpg', $ext);
@@ -125,7 +125,7 @@ class GetImgFromClipboard {
 	 * Check if Powershell version is greater than 5.1
 	 * @return bool
 	 */
-	public function isPowershell51(){
+	private function isPowershell51(){
 		$output = shell_exec('powershell $PSVersionTable');
 		$arr = explode("\n", $output);
 		$arr2 = explode(' ', preg_replace("/\s(?=\s)/","\\1",trim($arr[3])));

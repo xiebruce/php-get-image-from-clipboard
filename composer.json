@@ -9,13 +9,11 @@
             "email": "xiediebruce@hotmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4"
     },
     "autoload": {
-        "psr-4": {
-            "xiebruce\\": "src"
-        }
+        "psr-4": {"xiebruce\\": "src/"}
     }
 }
