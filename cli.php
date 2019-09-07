@@ -12,9 +12,9 @@
 	$argv = isset($_SERVER['argv'][1]) ? $_SERVER['argv'][1] : false;
 	if(!$argv || in_array($argv, ['-h', 'help', '--help', '?'])){
 		if(PHP_OS == 'WINNT'){
-			$helpMsg = "\nUsage: php.exe cli.php C:\\path\\to\\ScreenShot.png\n\nThis will save the image on the clipboard to file C:\\path\\to\\ScreenShot.png\n";
+			$helpMsg = "\nUsage:\n\tphp.exe cli.php C:\\path\\to\\ScreenShot.jpg\n\tphp.exe cli.php C:\\path\\to\\ScreenShot.png\n\nThis will save the image on the clipboard to file C:\\path\\to\\ScreenShot.png\n";
 		}else{
-			$helpMsg = "\nUsage: php cli.php /path/to/ScreenShot.png\n\nThis will save the image on the clipboard to file /path/to/ScreenShot.png\n";
+			$helpMsg = "\nUsage:\n\tphp cli.php /path/to/ScreenShot.jpg\n\tphp cli.php /path/to/ScreenShot.png\n\nThis will save the image on the clipboard to file /path/to/ScreenShot.png\n";
 		}
 		exit($helpMsg);
 	}
