@@ -11,7 +11,7 @@ composer require xiebruce/php-get-image-from-clipboard:dev-master
 Actually, php can not get image on the clipboard directly, so this tool is rely on other tools.
 
 ### For macOS
-For macOS, it rely on [pngpaste](https://github.com/jcsalterego/pngpaste), so you should install pngpaste first:
+For macOS, it relies on [pngpaste](https://github.com/jcsalterego/pngpaste), so you should install pngpaste first:
 ```
 brew install pngpaste
 ```
