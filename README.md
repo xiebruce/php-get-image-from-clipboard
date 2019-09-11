@@ -48,3 +48,5 @@ apt install xclip
 
 I didn't test other Linux distributions, but it should be work as long as you install `xclip`.
 
+### Acknowledgement
+Thanks to [octan3](https://github.com/octan3)'s [img-clipboard-dump](https://github.com/octan3/img-clipboard-dump), I use it to get image from clipboard on Windows in my Project.
