@@ -6,7 +6,8 @@
 	 * Time: 15:21
 	 */
 	
-	require '../vendor/autoload.php';
+	// require '../vendor/autoload.php';
+	require '../../../../vendor/autoload.php';
 	
 	use GetImgFromClipboard\GetImgFromClipboard;
 	
