@@ -6,7 +6,7 @@
 	 * Time: 15:21
 	 */
 	
-	require dirname(__DIR__) . '/vendor/autoload.php';
+	require '../vendor/autoload.php';
 	
 	use GetImgFromClipboard\GetImgFromClipboard;
 	
