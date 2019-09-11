@@ -46,5 +46,5 @@ On Ubuntu:
 apt install xclip
 ```
 
-I didn't test other Linux distributions, but it should be work.
+I didn't test other Linux distributions, but it should be work as long as you install `xclip`.
 
