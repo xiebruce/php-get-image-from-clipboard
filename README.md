@@ -48,5 +48,35 @@ apt install xclip
 
 I didn't test other Linux distributions, but it should be work as long as you install `xclip`.
 
-### Acknowledgement
+## Usage
+```php
+<?php
+	require '../vendor/autoload.php';
+	
+	use GetImgFromClipboard\GetImgFromClipboard;
+	
+	$obj = new GetImgFromClipboard();
+	switch (PHP_OS){
+		case 'Darwin':
+			// For macOS, save screenshot to Desktop
+			# /Users/youusername/Desktop/ScreenShot.jpg
+			# /Users/youusername/Desktop/ScreenShot.jpg
+			$savedImgPath = '/Users/bruce/Desktop/ScreenShot.jpg';
+			break;
+		case 'WINNT':
+			// For Windows, save screenshot to Desktop
+			# C:\Users\youusername\Desktop\ScreenShot.jpg
+			# C:\Users\youusername\Desktop\ScreenShot.png
+			$savedImgPath = 'C:\Users\youusername\Desktop\ScreenShot.png';
+		case 'Linux':
+			// For Linux, save screenshot to Desktop
+			# /home/yourusername/Desktop/ScreenShot.jpg
+			# /home/yourusername/Desktop/ScreenShot.png
+			$savedImgPath = '/home/yourusername/Desktop/ScreenShot.jpg';
+	}
+	$savedImgPath = $obj->save($savedImgPath);
+	echo $savedImgPath . "\n";
+```
+
+## Acknowledgement
 Thanks to [octan3](https://github.com/octan3)'s [img-clipboard-dump](https://github.com/octan3/img-clipboard-dump), I use it to get image from clipboard on Windows in my Project.
