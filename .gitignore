@@ -1,5 +1,6 @@
 # PicUploader project files
-.idea
+
+/.idea/
 .DS_Store
-composer.lock
-vendor
+/vendor/
+/composer.lock
