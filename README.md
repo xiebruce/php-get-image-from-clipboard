@@ -1,4 +1,4 @@
-PHP-GetImgFromClipboard
+php-get-image-from-clipboard
 ===
 PHP-GetImgFromClipboard is a tool that allows you to get image on the clipboard(usually copy to the clipboard by taking a screenshot or copy from web page) and save it to an image file like jpg or png.
 
