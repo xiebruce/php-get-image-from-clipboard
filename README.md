@@ -51,7 +51,7 @@ I didn't test other Linux distributions, but it should be work as long as you in
 ## Usage
 ```php
 <?php
-	require '../vendor/autoload.php';
+	require 'vendor/autoload.php';
 	
 	use GetImgFromClipboard\GetImgFromClipboard;
 	
