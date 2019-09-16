@@ -4,7 +4,7 @@ PHP-GetImgFromClipboard is a tool that allows you to get image on the clipboard(
 
 ## Install
 ```bash
-composer require xiebruce/php-get-image-from-clipboard:dev-master
+composer require xiebruce/php-get-image-from-clipboard
 ```
 
 ## Requires
